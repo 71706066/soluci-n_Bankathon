@@ -1,0 +1,1576 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hackatonwilmar</title>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!--<link href="CSS/hackstyle.css" rel="stylesheet">-->
+
+
+</head>
+
+<body class="container" style="background-color: darkkhaki">
+	<h1 class="page-header">Capturando eschanges</h1>
+	<div class="row">
+		<div>
+			<h3 class="sub-header">Deploy Towerbank</h3>
+			<!--<form class="form-inline" role="form">-->
+			<div class="form-group">
+				<table>
+					<tr>
+						<td><label for="newInfo">Selección Crypto:</label> </td>
+						<td><select name="newInfo" class="form-control" id="newInfo">
+								<option value="BTC/USD">BTC/USD</option>
+								<option value="ETH/USD">ETH/USD</option>
+								<option value="AXS/USD" selected>AXS/USD</option>
+								<option value="golang">Golang</option>
+							</select></td>
+						<td><input id="funcionn" type="button" value="Dato"></td>
+					</tr>
+
+
+				</table>
+			</div>
+			<!--</form>-->
+		</div>
+	</div>
+
+
+	<div>
+		<table class="table">
+			<tr>
+				<td> Number</td>
+				<td> Coin</td>
+				<td> Best offer price </td>
+				<td> Best demand price </td>
+				<td> Exchange</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td> <img id="wilbitcoin11" src="bitcoin.png" alt="Girl in a jacket" width="30" height="30" border="0">
+					<p>Bitcoin:BTC</p>
+				</td>
+				<td>
+					<p id="bitcoinbinance">26.45</p>
+				</td>
+				<td>
+					<p id="bitcoinbinancedd">00000.000</p>
+				</td>
+				<td> Binace</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td> <img id="wilbitcoin22" src="bitcoin.png" alt="Girl in a jacket" width="30" height="30" border="0">
+					<p>Bitcoin:BTC</p>
+				</td>
+				<td>
+					<p id="bitcoinkraken">26.74</p>
+				</td>
+				<td>
+					<p id="bitcoinkrakendd">0000.00</p>
+				</td>
+				<td> Kraken</td>
+			</tr>
+
+
+			<tr>
+				<td>3</td>
+				<td> <img id="wilethereum11" src="ethereum.png" alt="Girl in a jacket" width="30" height="30">
+					<p>Ethereum:ETH</p>
+				</td>
+				<td>
+					<p id="ethbinance">1.65</p>
+				</td>
+				<td>
+					<p id="ethbinancedd">0000.00</p>
+				</td>
+				<td> Binance</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td> <img id="wilethereum22" src="ethereum.png" alt="Girl in a jacket" width="30" height="30">
+					<p>Ethereum:ETH</p>
+				</td>
+				<td>
+					<p id="ethkraken">8.43</p>
+				</td>
+				<td>
+					<p id="ethkrakendd">0000.00</p>
+				</td>
+				<td> Kraken</td>
+			</tr>
+
+
+
+		</table>
+	</div>
+
+	<div>
+		<table class="table">
+			<tr>
+				RECOMENDACIÓN DE COMPRA
+			</tr>
+			<tr>
+				<td> Comment</td>
+				<td> Best purchase price</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Es recomendable comprar</p>
+					<p id="tcripto">Bitcoin (BTC)</p>
+					<p id="exchangeee">en Binance al precio</p>
+				</td>
+				<td>
+					<p id="valueee">00000.000</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div>
+		<table class="table">
+			<tr>
+				RECOMENDACIÓN DE VENTA
+			</tr>
+			<tr>
+				<td> Comment</td>
+				<td>best sale price</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Es recomendable vender</p>
+					<p id="tcripto22">Bitcoin (BTC)</p>
+					<p id="exchange22">en Binance al precio</p>
+				</td>
+				<td>
+					<p id="value22">00000.000</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<h3 class="page-header">COMPRA Y VENTA DE CRIPTO MONEDAS:</h3>
+	<div class="form-group">
+		<table>
+			<tr>
+				<td><label for="identifica">Identificación: Ingresa Id de 5 números y presiona el botón de
+						saldo:</label></td>
+				<td><input class="form-control" name="identifica" type="number" id="quantity"></td>
+				<td><input type="button" id="cuentacc" value="Id y saldo"></td>
+			</tr>
+			<tr>
+				<td>
+					<p id="textaccount">Número de cuenta en Towerbank:</p>
+				</td>
+				<td>
+					<p id="numberaccount">yu765tre6777oi</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p id="textbalance">Balance cuenta Towerbank:</p>
+				</td>
+				<td>
+					<p id="numberbalance">000000000</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p id="accountbad">Identificación ingresada incorrectamente o no tienes cuenta en Towerbank</p>
+				</td>
+			</tr>
+		</table>
+
+		<table>
+			<tr>
+				<td><label for="compra">Ingresa cantidad de dolares a comprar en criptomonedas, luego continuar:</label>
+				</td>
+				<td><input class="form-control" name="compra" type="number" id="coinusd"></td>
+				<td><input type="button" id="transactiontowerbank" value="Continuar"></td>
+			</tr>
+			<tr>
+				<td>
+					<p id="mensajebalance">Nuevo saldo en Towerbank:</p>
+				</td>
+				<td>
+					<p id="balanceactuali">00000000.00</p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p id="Insufficientbalance">Insuficiente saldo o la cuenta debe quedar mínimo con 100 dolares o la
+						cantidad mínima a retirar son 100 dolares, verifica por favor</p>
+				</td>
+			</tr>
+		</table>
+
+		<h4 class="page-header">COMPRA CRIPTOMONEDAS:</h4>
+		<table>
+			<tr>
+				<td><label for="typecripto">Ingresa el tipo de cripto a comprar:</label></td>
+				<td><select name="typecripto" class="form-control" id="typecripto">
+						<option value="BTC/USD">BTC/USD</option>
+						<option value="ETH/USD">ETH/USD</option>
+						<option value="AXS/USD">AXS/USD</option>
+						<option value="golang" selected>Golang</option>
+					</select></td>
+			</tr>
+
+			<tr>
+				<td><label for="typeexchange">Ingresa el Exchange para comprar:</label></td>
+				<td><select name="typeexchange" class="form-control" id="typeexchange">
+						<option value="Binance">Binance</option>
+						<option value="Kraken">Kraken</option>
+						<option value="Buda">Buda</option>
+						<option value="Bitstamp">Bit</option>
+						<option value="Golang" selected>Golang</option>
+					</select></td>
+				<td><input type="button" id="transaexchange" value="Continue with the purchase of cryptocurrencies">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p id="mensajeerrorcompra">Falta saldo para comprar cripto moneda en Towerbank:</p>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="container" id="clientetower">
+		<table class="table table-bordered table-sm" id="tablacliente">
+			<tr>
+				Cliente Towerbank
+			</tr>
+			<tr>
+				<td>
+					<p>EXCHANGE\CRIPTO</p>
+				</td>
+				<td>
+					<p>BTC</p>
+				</td>
+				<td> ETH</td>
+			</tr>
+			<tr>
+				<td>
+					<p>BINANCE</p>
+				</td>
+				<td>
+					<p id="btcbinancecl">00000.000</p>
+				</td>
+				<td>
+					<p id="ethhbinanceecl"> 00000.000 </p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>KRAKEN</p>
+				</td>
+				<td>
+					<p id="btckrakenncl">00000.000</p>
+				</td>
+				<td>
+					<p id="ethhkrakennncl"> 00000.000 </p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>BUDA</p>
+				</td>
+				<td>
+					<p id="btcbudaacl">00000.000</p>
+				</td>
+				<td>
+					<p id="ethhbuddaacl"> 00000.000 </p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>BITSM</p>
+				</td>
+				<td>
+					<p id="btcbitsmmcl">00000.000</p>
+				</td>
+				<td>
+					<p id="ethhbitsmmmcl"> 00000.000 </p>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="container" id="bancotower">
+		<table class="table table-bordered table-sm" id="tablabanco">
+			<tr>
+				Bank Towerbank
+			</tr>
+			<tr>
+				<td>
+					<p>EXCHANGE\CRIPTO</p>
+				</td>
+				<td>
+					<p>BTC</p>
+				</td>
+				<td> ETH</td>
+				<td> TOTAL FUNDS</td>
+
+			</tr>
+			<tr>
+				<td>
+					<p>BINANCE</p>
+				</td>
+				<td>
+					<p id="btcbinancebank">00000.000</p>
+				</td>
+				<td>
+					<p id="ethhbinanceebank"> 00000.000 </p>
+				</td>
+				<td>
+					<p id="etbtchbinanceebank"> 00000.000 </p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>KRAKEN</p>
+				</td>
+				<td>
+					<p id="btckrakennbank">00000.000</p>
+				</td>
+				<td>
+					<p id="ethhkrakennnbank"> 00000.000 </p>
+				</td>
+				<td>
+					<p id="ethbtchkrakennnbank"> 00000.000 </p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>BUDA</p>
+				</td>
+				<td>
+					<p id="btcbudaabank">00000.000</p>
+				</td>
+				<td>
+					<p id="ethhbuddaabank"> 00000.000 </p>
+				</td>
+				<td>
+					<p id="ethhbtcbuddaabank"> 00000.000 </p>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>BITSM</p>
+				</td>
+				<td>
+					<p id="btcbitsmmbank">00000.000</p>
+				</td>
+				<td>
+					<p id="ethhbitsmmmbank"> 00000.000 </p>
+				</td>
+				<td>
+					<p id="ethhbtcbitsmmmbank"> 00000.000 </p>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div>
+		<h4 class="page-header">TOWERBANK ACTUALIZA FONDOS:</h4>
+		<table>
+			<tr>
+				<td><label for="banksaldoactuali">Oprime el botón para actualizar fondos del banco</label></td>
+				<!--<td><input class="form-control" name= "banksaldoactuali" type="number" id="banksaldoactuali"></td>-->
+				<td><input type="button" id="saldobankactua" value="Actualizar fondos de Towerbank"></td>
+			</tr>
+			<tr>
+				<td>
+					<p id="mensajeingrsobank">La clave no corresponde, debe ser un número de 4 digitos y el primero no
+						puede ser cero, verifica por favor</p>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+
+	<div>
+		<h4 class="page-header">BALANCEO DE FONDOS TOWERBANK:</h4>
+		<table>
+			<tr>
+				<td><label for="banksaldobalan">Oprime el botón para balancear fondos del banco</label></td>
+				<td><input type="button" id="saldobankbalanceo" value="Balanceo fondos Towerbank"></td>
+			</tr>
+		</table>
+
+	</div>
+
+
+
+
+
+
+	<script>
+		document.getElementById('textaccount').style.visibility = 'hidden';
+		document.getElementById('numberaccount').style.visibility = 'hidden';
+		document.getElementById('textbalance').style.visibility = 'hidden';
+		document.getElementById('numberbalance').style.visibility = 'hidden';
+		document.getElementById('accountbad').style.visibility = 'hidden';
+
+		document.getElementById('mensajebalance').style.visibility = 'hidden';
+		document.getElementById('balanceactuali').style.visibility = 'hidden';
+		document.getElementById('Insufficientbalance').style.visibility = 'hidden';
+
+		document.getElementById('mensajeingrsobank').style.visibility = 'hidden';
+
+		document.getElementById("mensajeerrorcompra").style.visibility = 'hidden';
+
+		var gato = {};
+		var accountobjet = {};
+		var usdobject = {};
+		var providersexchange = {};
+		var outputcoin = 0, controlbutton111 = 0;
+		var cryptobinanceoffer = 0, cryptobudaoffer = 0;
+		var cryptokrakenoffer = 0, cryptobitstamoffer = 0;
+		var cryptobinanceoffereth = 0, cryptokrakenoffereth = 0;
+		var cryptobudaoffereth = 0, cryptobitstamoffereth = 0;
+		var bestcrypto = 0;
+		var cryptobinancedemand = 0, cryptobitstamdemand = 0;
+		var cryptokrakendemand = 0, cryptobudademandd = 0;
+		var bestcryptodd = 0;
+		var accountusuary, balanceusuary = 0, balanceusuary22 = 0;
+		var usdpurchase = 0;
+		var balanethusuarybinance = 0, balanbtcusuarybinance = 0;
+		var balanethusuarykraken = 0, balanbtcusuarykraken = 0;
+		var balanethusuarybitsm = 0, balanbtcusuarybitsm = 0;
+		var balanethusuarybuda = 0, balanbtcusuarybuda = 0;
+
+		var balancethbinance = 0, balanbtcbinance = 0, balanethkraken = 0, balanbtckraken = 0;
+		var balanethbitsm = 0, balanbtcbitsm = 0, balanethbuda = 0, balanbtcbuda = 0;
+
+		var acbalancethbinance = 0, acbalanbtcbinance = 0, acbalanethkraken = 0, acbalanbtckraken = 0;
+		var acbalanethbitsm = 0, acbalanbtcbitsm = 0, acbalanethbuda = 0, acbalanbtcbuda = 0;
+
+		var balancecriptobinance = 0, balancecriptokraken = 0, balancecriptobuda = 0;
+		var balancecriptobitsm = 0;
+
+		var balanceoooeth = [], balanceooobtc = [], criptomenor = [], criptomayor = [];
+		var comparacionbalan = 0, comparacoins = 0, comparacoinsmayor = 0;
+
+
+		function EnlazaCcoin() {
+			comparacoins = 0;
+			comparacoinsmayor = 0;
+
+			for (var i = 0; i < criptomayor.length; i++) {
+				criptomenor[i] = 0;
+				criptomayor[i] = 0;
+			}
+
+
+			if (document.getElementById('newInfo').options[document.getElementById('newInfo').selectedIndex].text == "BTC/USD") {
+				fetch('https://www.binance.com/api/v3/ticker/price?symbol=BTCUSDT')
+					.then(res => res.json()) // el método .json() analiza la respuesta JSON en un objeto literal JS     
+					.then(function (data) {
+						gato = data;
+						document.getElementById('bitcoinbinance').innerHTML = gato.price;
+						cryptobinanceoffer = gato.price;
+						criptomenor[0] = cryptobinanceoffer;
+
+					});
+
+				fetch('https://api.kraken.com/0/public/Ticker?pair=BTCUSD')
+					.then(res => res.json()) // el método .json() analiza la respuesta JSON en un objeto literal JS     
+					.then(function (data) {
+						gato = data;
+						document.getElementById('bitcoinkraken').innerHTML = gato.result.XXBTZUSD.a[0];
+						cryptokrakenoffer = gato.result.XXBTZUSD.a[0];
+						criptomenor[1] = cryptokrakenoffer;
+					});
+
+
+
+
+
+
+
+
+
+
+				fetch('https://www.binance.com/api/v3/ticker/price?symbol=BTCUSDT')
+					.then(res => res.json()) // el método .json() analiza la respuesta JSON en un objeto literal JS     
+					.then(function (data) {
+						gato = data;
+						document.getElementById('bitcoinbinancedd').innerHTML = gato.price;
+						cryptobinancedemand = gato.price;
+						criptomayor[0] = cryptobinancedemand;
+					});
+
+				fetch('https://api.kraken.com/0/public/Ticker?pair=BTCUSD')
+					.then(res => res.json()) // el método .json() analiza la respuesta JSON en un objeto literal JS     
+					.then(function (data) {
+						gato = data;
+						document.getElementById('bitcoinkrakendd').innerHTML = gato.result.XXBTZUSD.a[0];
+						cryptokrakendemand = gato.result.XXBTZUSD.a[0];
+						criptomayor[1] = cryptokrakendemand;
+					});
+
+
+
+
+
+
+
+
+			} else if (document.getElementById('newInfo').options[document.getElementById('newInfo').selectedIndex].text == "ETH/USD") {
+				fetch('https://www.binance.com/api/v3/ticker/price?symbol=ETHUSDT')
+					.then(res => res.json()) // el método .json() analiza la respuesta JSON en un objeto literal JS     
+					.then(function (data) {
+						gato = data;
+						document.getElementById('ethbinance').innerHTML = gato.price;
+						cryptobinanceoffereth = gato.price;
+						criptomenor[0] = cryptobinanceoffereth;
+					});
+
+				fetch('https://api.kraken.com/0/public/Ticker?pair=ETHUSD')
+					.then(res => res.json()) // el método .json() analiza la respuesta JSON en un objeto literal JS     
+					.then(function (data) {
+						gato = data;
+						document.getElementById('ethkraken').innerHTML = gato.result.XETHZUSD.a[0];
+						cryptokrakenoffereth = gato.result.XETHZUSD.a[0];
+						criptomenor[1] = cryptokrakenoffereth;
+					});
+
+
+
+
+
+
+
+
+				fetch('https://www.binance.com/api/v3/ticker/price?symbol=ETHUSDT')
+					.then(res => res.json()) // el método .json() analiza la respuesta JSON en un objeto literal JS     
+					.then(function (data) {
+						gato = data;
+						document.getElementById('ethbinancedd').innerHTML = gato.price;
+						cryptobinancedemand = gato.price;
+						criptomayor[0] = cryptobinancedemand;
+					});
+
+				fetch('https://api.kraken.com/0/public/Ticker?pair=ETHUSD')
+					.then(res => res.json()) // el método .json() analiza la respuesta JSON en un objeto literal JS     
+					.then(function (data) {
+						gato = data;
+						document.getElementById('ethkrakendd').innerHTML = gato.result.XETHZUSD.a[0];
+						cryptokrakendemand = gato.result.XETHZUSD.a[0];
+						criptomayor[1] = cryptokrakendemand;
+					});
+
+
+
+
+
+
+
+
+
+
+
+
+
+			}
+
+		}
+
+		function RunEnlazacoin() {
+			document.getElementById("funcionn").addEventListener("mousedown", RunreadCoin, false);
+		}
+
+		function RunreadCoin() {
+			if (document.getElementById('newInfo').options[document.getElementById('newInfo').selectedIndex].text != "AXS/USD") {
+				outputcoin = 1;
+			}
+		}
+
+
+		function flujoEscenario() {
+			setInterval(function () {
+				if (outputcoin == 1) {
+					EnlazaCcoin();
+				}
+			}, 4000);
+		}
+
+		function Escenarioflujo2() {
+			setInterval(function () {
+				//EnlazaCcoin();
+				AccountTowerbank();
+				TransactionTowerbankeject();
+				SelectionCryptoandexchangeeejectt();
+				PurchaseCryptoconcurrencieject();
+				BalanceoFoundsTowerbankeject();
+				//AccountTowerbankvery();
+				//TransacctionTowerbankdinner();
+			}, 40);
+		}
+
+
+		RunEnlazacoin();
+		flujoEscenario();
+		Escenarioflujo2();
+
+		//AccountTowerbank();
+		//TransactionTowerbankeject();
+
+		function AccountTowerbank() {
+
+			document.getElementById("cuentacc").addEventListener("mousedown", AccountTowerbankvery, false);
+		}
+
+		/*document.getElementById('textaccount').style.visibility = 'hidden';
+		document.getElementById('numberaccount').style.visibility = 'hidden';
+		document.getElementById('textbalance').style.visibility = 'hidden';
+		document.getElementById('numberbalance').style.visibility = 'hidden';
+		document.getElementById('accountbad').style.visibility = 'hidden';*/
+
+
+
+		async function AccountTowerbankvery() {
+
+			if (document.getElementById('quantity').value >= 10000 && document.getElementById('quantity').value <= 100000) {
+
+				if (document.getElementById('accountbad').style.visibility == 'visible') {
+					document.getElementById('accountbad').style.visibility = 'hidden';
+				}
+
+				var myHeaders = new Headers();
+				myHeaders.append("Content-Type", "application/json");
+				myHeaders.append("Accept", "application/json, text/plain, */*");
+				myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+				var requestOptions = {
+					method: 'GET',
+					headers: myHeaders,
+					redirect: 'follow'
+				};
+
+				await fetch("https://towerbank.bankathontb.com/bankathon/v1/account", requestOptions)
+					.then(response => response.json())
+					.then(function (result) {
+						accountobjet = result;
+						document.getElementById('numberaccount').innerHTML = accountobjet.accountId; document.getElementById('numberbalance').innerHTML = accountobjet.balance;
+						accountusuary = accountobjet.accountId;
+						balanceusuary = accountobjet.balance;
+						if (accountusuary != "" && balanceusuary != 0) {
+							document.getElementById('textaccount').style.visibility = 'visible';
+							document.getElementById('numberaccount').style.visibility = 'visible';
+							document.getElementById('textbalance').style.visibility = 'visible';
+							document.getElementById('numberbalance').style.visibility = 'visible';
+						}
+					})
+					.catch(error => console.log('error', error));
+			} else {
+				document.getElementById('accountbad').style.visibility = 'visible';
+				document.getElementById('textaccount').style.visibility = 'hidden';
+				document.getElementById('numberaccount').style.visibility = 'hidden';
+				document.getElementById('textbalance').style.visibility = 'hidden';
+				document.getElementById('numberbalance').style.visibility = 'hidden';
+			}
+		}
+
+
+		function TransactionTowerbankeject() {
+			usdpurchase = document.getElementById('coinusd').value;
+			document.getElementById("transactiontowerbank").addEventListener("mousedown", TransacctionTowerbankdinner, false);
+		}
+
+		/*document.getElementById('mensajebalance').style.visibility = 'hidden';
+		document.getElementById('balanceactuali').style.visibility = 'hidden';
+		document.getElementById('Insufficientbalance').style.visibility = 'hidden';*/
+
+
+
+		async function TransacctionTowerbankdinner() {
+			//usdpurchase = document.getElementById('coinusd').value;		
+
+			if (usdpurchase < (balanceusuary - 100) && usdpurchase >= 100 && balanceusuary >= 100) {
+
+				if (document.getElementById('Insufficientbalance').style.visibility == 'visible') {
+					document.getElementById('Insufficientbalance').style.visibility = 'hidden';
+				}
+
+				var myHeaders = new Headers();
+				myHeaders.append("Content-Type", "application/json");
+				myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+				var raw = JSON.stringify({
+					"accountId": accountusuary,
+					"amount": -usdpurchase,
+					"transactionType": "purchase"
+				});
+
+				var requestOptions = {
+					method: 'POST',
+					headers: myHeaders,
+					body: raw,
+					redirect: 'follow'
+				};
+
+				await fetch("https://towerbank.bankathontb.com/bankathon/v1/transaction", requestOptions)
+					.then(response => response.json())
+					.then(function (result) {
+						usdobject = result;
+						document.getElementById('balanceactuali').innerHTML = usdobject.balance;
+						balanceusuary22 = usdobject.balance;
+						if (balanceusuary22 > 0) {
+							document.getElementById('mensajebalance').style.visibility = 'visible';
+							document.getElementById('balanceactuali').style.visibility = 'visible';
+						}
+					})
+					.catch(error => console.log('error', error));
+			} else {
+				document.getElementById('Insufficientbalance').style.visibility = 'visible';
+				document.getElementById('mensajebalance').style.visibility = 'hidden';
+				document.getElementById('balanceactuali').style.visibility = 'hidden';
+			}
+		}
+
+
+		function SelectionCryptoandexchangeeejectt() {
+			document.getElementById("saldobankactua").addEventListener("mousedown", SelectionCryptoandexchangeee, false);
+		}
+
+
+
+		async function SelectionCryptoandexchangeee() {
+
+			saldobankactua.disabled = true;
+			var myHeaders = new Headers();
+			myHeaders.append("Content-Type", "application/json");
+			myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+			var requestOptions = {
+				method: 'GET',
+				headers: myHeaders,
+				redirect: 'follow'
+			};
+
+			await fetch("https://towerbank.bankathontb.com/bankathon/v1/providers", requestOptions)
+				.then(response => response.json())
+				.then(function (result) {
+					providersexchange = result;
+					document.getElementById('btcbinancebank').innerHTML = providersexchange.data[0].balance / 2;
+					document.getElementById('ethhbinanceebank').innerHTML = providersexchange.data[0].balance / 2;
+					document.getElementById('etbtchbinanceebank').innerHTML = providersexchange.data[0].balance;
+					balancethbinance = providersexchange.data[0].balance / 2;
+					balanbtcbinance = providersexchange.data[0].balance / 2;
+					balancecriptobinance = providersexchange.data[0].balance;
+					balanceoooeth[0] = providersexchange.data[0].balance / 2;
+					balanceooobtc[0] = providersexchange.data[0].balance / 2;
+
+
+					document.getElementById('btcbitsmmbank').innerHTML = providersexchange.data[1].balance / 2;
+					document.getElementById('ethhbitsmmmbank').innerHTML = providersexchange.data[1].balance / 2;
+					document.getElementById('ethhbtcbitsmmmbank').innerHTML = providersexchange.data[1].balance;
+					balanethbitsm = providersexchange.data[1].balance / 2;
+					balanbtcbitsm = providersexchange.data[1].balance / 2;
+					balancecriptobitsm = providersexchange.data[1].balance;
+					balanceoooeth[1] = providersexchange.data[1].balance / 2;
+					balanceooobtc[1] = providersexchange.data[1].balance / 2;
+
+
+					document.getElementById('btcbudaabank').innerHTML = providersexchange.data[2].balance / 2;
+					document.getElementById('ethhbuddaabank').innerHTML = providersexchange.data[2].balance / 2;
+					document.getElementById('ethhbtcbuddaabank').innerHTML = providersexchange.data[2].balance;
+					balanethbuda = providersexchange.data[2].balance / 2;
+					balanbtcbuda = providersexchange.data[2].balance / 2;
+					balancecriptobuda = providersexchange.data[2].balance;
+					balanceoooeth[2] = providersexchange.data[2].balance / 2;
+					balanceooobtc[2] = providersexchange.data[2].balance / 2;
+
+
+					document.getElementById('btckrakennbank').innerHTML = providersexchange.data[3].balance / 2;
+					document.getElementById('ethhkrakennnbank').innerHTML = providersexchange.data[3].balance / 2;
+					document.getElementById('ethbtchkrakennnbank').innerHTML = providersexchange.data[3].balance;
+					balanethkraken = providersexchange.data[3].balance / 2;
+					balanbtckraken = providersexchange.data[3].balance / 2;
+					balancecriptokraken = providersexchange.data[3].balance;
+					balanceoooeth[3] = providersexchange.data[3].balance / 2;
+					balanceooobtc[3] = providersexchange.data[3].balance / 2;
+
+
+				})
+				.catch(error => console.log('error', error));
+
+		}
+
+
+		function PurchaseCryptoconcurrencieject() {
+			document.getElementById("transaexchange").addEventListener("mousedown", PurchaaseCrypptoconcurrencipp, false);
+		}
+
+		function PurchaaseCrypptoconcurrencipp() {
+
+			if (document.getElementById("mensajeerrorcompra").style.visibility == 'visible') {
+				document.getElementById("mensajeerrorcompra").style.visibility = 'hidden';
+			}
+
+			if (document.getElementById('typecripto').options[document.getElementById('typecripto').selectedIndex].text == "BTC/USD" && document.getElementById('typeexchange').options[document.getElementById('typeexchange').selectedIndex].text == "Binance") {
+
+				if (usdpurchase == (balanceusuary - balanceusuary22) && balancecriptobinance != 0 && balanceusuary22 != 0) {
+					balanbtcusuarybinance += (balanceusuary - balanceusuary22) / cryptobinanceoffer;
+					document.getElementById('btcbinancecl').innerHTML = balanbtcusuarybinance;
+					balanbtcbinance -= balanbtcusuarybinance;
+					document.getElementById('btcbinancebank').innerHTML = balanbtcbinance;
+					balanceooobtc[0] -= balanbtcusuarybinance;
+				}
+			} else if (document.getElementById('typecripto').options[document.getElementById('typecripto').selectedIndex].text == "BTC/USD" && document.getElementById('typeexchange').options[document.getElementById('typeexchange').selectedIndex].text == "Kraken") {
+
+				if (usdpurchase == (balanceusuary - balanceusuary22) && balancecriptokraken != 0 && balanceusuary22 != 0) {
+					balanbtcusuarykraken += (balanceusuary - balanceusuary22) / cryptokrakenoffer;
+					document.getElementById('btckrakenncl').innerHTML = balanbtcusuarykraken;
+					balanbtckraken -= balanbtcusuarykraken;
+					document.getElementById('btckrakennbank').innerHTML = balanbtckraken;
+					balanceooobtc[3] -= balanbtcusuarykraken;
+
+				}
+			} else if (document.getElementById('typecripto').options[document.getElementById('typecripto').selectedIndex].text == "BTC/USD" && document.getElementById('typeexchange').options[document.getElementById('typeexchange').selectedIndex].text == "Buda") {
+
+				if (usdpurchase == (balanceusuary - balanceusuary22) && balancecriptobuda != 0 && balanceusuary22 != 0) {
+					balanbtcusuarybuda += (balanceusuary - balanceusuary22) / cryptobudaoffer;
+					document.getElementById('btcbudaacl').innerHTML = balanbtcusuarybuda;
+					balanbtcbuda -= balanbtcusuarybuda;
+					document.getElementById('btcbudaabank').innerHTML = balanbtcbuda;
+					balanceooobtc[2] -= balanbtcusuarybuda;
+				}
+			} else if (document.getElementById('typecripto').options[document.getElementById('typecripto').selectedIndex].text == "BTC/USD" && document.getElementById('typeexchange').options[document.getElementById('typeexchange').selectedIndex].text == "Bitstamp") {
+
+				if (usdpurchase == (balanceusuary - balanceusuary22) && balancecriptobitsm != 0 && balanceusuary22 != 0) {
+					balanbtcusuarybitsm += (balanceusuary - balanceusuary22) / cryptobitstamoffer;
+					document.getElementById('btcbudaacl').innerHTML = balanbtcusuarybitsm;
+					balanbtcbitsm -= balanbtcusuarybitsm;
+					document.getElementById('btcbudaabank').innerHTML = balanbtcbitsm;
+					balanceooobtc[1] -= balanbtcusuarybitsm;
+				}
+			} else if (document.getElementById('typecripto').options[document.getElementById('typecripto').selectedIndex].text == "ETH/USD" && document.getElementById('typeexchange').options[document.getElementById('typeexchange').selectedIndex].text == "Binance") {
+
+				if (usdpurchase == (balanceusuary - balanceusuary22) && balancecriptobinance != 0 && balanceusuary22 != 0) {
+					balanethusuarybinance += (balanceusuary - balanceusuary22) / cryptobinanceoffereth;
+					document.getElementById('ethhbinanceecl').innerHTML = balanethusuarybinance;
+					balancethbinance -= balanethusuarybinance;
+					document.getElementById('ethhbinanceebank').innerHTML = balancethbinance;
+					balanceoooeth[0] -= balanethusuarybinance;
+				}
+			} else if (document.getElementById('typecripto').options[document.getElementById('typecripto').selectedIndex].text == "ETH/USD" && document.getElementById('typeexchange').options[document.getElementById('typeexchange').selectedIndex].text == "Kraken") {
+
+				if (usdpurchase == (balanceusuary - balanceusuary22) && balancecriptokraken != 0 && balanceusuary22 != 0) {
+					balanethusuarykraken += (balanceusuary - balanceusuary22) / cryptokrakenoffereth;
+					document.getElementById('ethhkrakennncl').innerHTML = balanethusuarykraken;
+					balanethkraken -= balanethusuarykraken;
+					document.getElementById('ethhkrakennnbank').innerHTML = balanethkraken;
+					balanceoooeth[3] -= balanethusuarykraken;
+
+				}
+			} else if (document.getElementById('typecripto').options[document.getElementById('typecripto').selectedIndex].text == "ETH/USD" && document.getElementById('typeexchange').options[document.getElementById('typeexchange').selectedIndex].text == "Buda") {
+
+				if (usdpurchase == (balanceusuary - balanceusuary22) && balancecriptobuda != 0 && balanceusuary22 != 0) {
+					balanethusuarybuda += (balanceusuary - balanceusuary22) / cryptobudaoffereth;
+					document.getElementById('ethhbuddaacl').innerHTML = balanethusuarybuda;
+					balanethbuda -= balanethusuarybuda;
+					document.getElementById('ethhbuddaabank').innerHTML = balanethbuda;
+					balanceoooeth[2] -= balanethusuarybuda;
+
+				}
+			} else if (document.getElementById('typecripto').options[document.getElementById('typecripto').selectedIndex].text == "ETH/USD" && document.getElementById('typeexchange').options[document.getElementById('typeexchange').selectedIndex].text == "Bitstamp") {
+
+				if (usdpurchase == (balanceusuary - balanceusuary22) && balancecriptobitsm != 0 && balanceusuary22 != 0) {
+					balanethusuarybitsm += (balanceusuary - balanceusuary22) / cryptobitstamoffereth;
+					document.getElementById('btcbudaacl').innerHTML = balanethusuarybitsm;
+					balanethbitsm -= balanethusuarybitsm;
+					document.getElementById('btcbudaabank').innerHTML = balanethbitsm;
+					balanceoooeth[1] -= balanethusuarybitsm;
+				}
+			} else {
+				document.getElementById("mensajeerrorcompra").style.visibility = 'visible';
+			}
+		}
+
+
+		function BalanceoFoundsTowerbankeject() {
+			document.getElementById("saldobankbalanceo").addEventListener("mousedown", BalannceoFFoundsTowerbankk, false);
+		}
+
+
+		async function BalannceoFFoundsTowerbankk() {
+			comparacionbalan = 0;
+			for (var i = 0; i < balanceooobtc.length; i++) {
+				if (balanceooobtc[i] < 449999) {
+					for (var j = 0; j < balanceooobtc.length; j++) {
+						if (balanceooobtc[j] > comparacionbalan) {
+							comparacionbalan = balanceooobtc[j];
+							if (comparacionbalan > 450000) {
+								if (i == 0 && j == 1) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "bitstamp",
+										"to": "binance",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 0 && j == 2) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "buda",
+										"to": "binance",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 0 && j == 3) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "kraken",
+										"to": "binance",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 1 && j == 0) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "binance",
+										"to": "bitstamp",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+								} else if (i == 1 && j == 2) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "buda",
+										"to": "bitstamp",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 1 && j == 3) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "kraken",
+										"to": "bitstamp",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 2 && j == 0) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "binance",
+										"to": "buda",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 2 && j == 1) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "bitstamp",
+										"to": "buda",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 2 && j == 3) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "kraken",
+										"to": "buda",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 3 && j == 0) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "binance",
+										"to": "kraken",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 3 && j == 1) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "bitstamp",
+										"to": "kraken",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 3 && j == 2) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "buda",
+										"to": "kraken",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+								}
+
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+			comparacionbalan = 0;
+			for (var i = 0; i < balanceoooeth.length; i++) {
+				if (balanceoooeth[i] < 300000) {
+					for (var j = 0; j < balanceoooeth.length; j++) {
+						if (balanceoooeth[j] > comparacionbalan) {
+							comparacionbalan = balanceoooeth[j];
+							if (comparacionbalan > 312000) {
+								if (i == 0 && j == 1) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "bitstamp",
+										"to": "binance",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 0 && j == 2) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "buda",
+										"to": "binance",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 0 && j == 3) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "kraken",
+										"to": "binance",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 1 && j == 0) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "binance",
+										"to": "bitstamp",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+								} else if (i == 1 && j == 2) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "buda",
+										"to": "bitstamp",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 1 && j == 3) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "kraken",
+										"to": "bitstamp",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 2 && j == 0) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "binance",
+										"to": "buda",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 2 && j == 1) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "bitstamp",
+										"to": "buda",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 2 && j == 3) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "kraken",
+										"to": "buda",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 3 && j == 0) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "binance",
+										"to": "kraken",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 3 && j == 1) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "bitstamp",
+										"to": "kraken",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+
+								} else if (i == 3 && j == 2) {
+
+									saldobankactua.disabled = false;
+									var myHeaders = new Headers();
+									myHeaders.append("Content-Type", "application/json");
+									myHeaders.append("Authorization", "Bearer 86e7b63e-a39a-4774-90eb-c1fdb364fed0!acfee6913edf5a587bec45624bde5cc58912c2de4ab8fb51478a0b29c38ec7ca2acd2d82411019");
+
+
+									var raw = JSON.stringify({
+										"from": "buda",
+										"to": "kraken",
+										"amount": 9000
+									});
+
+									var requestOptions = {
+										method: 'POST',
+										headers: myHeaders,
+										body: raw,
+										redirect: 'follow'
+									};
+
+									await fetch("https://towerbank.bankathontb.com/bankathon/v1/providerstransaction", requestOptions)
+										.then(response => response.text())
+										.then(result => console.log(result))
+										.catch(error => console.log('error', error));
+								}
+
+
+							}
+
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	</script>
+
+</body>
+
+</html>
